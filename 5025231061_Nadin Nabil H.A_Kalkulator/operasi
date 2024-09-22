@@ -1,0 +1,39 @@
+/**
+ * Write a description of class TicketMachine here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class Operasi {
+    private float number1;
+    private float number2;
+
+    public void setNumber1(float amount) {
+        number1 = amount;
+    }
+
+    public void setNumber2(float amount) {
+        number2 = amount;
+    }
+
+    public float penjumlahan() {
+        return number1 + number2;
+    }
+
+    public float pengurangan() {
+        return number1 - number2;
+    }
+
+    public float perkalian() {
+        return number1 * number2;
+    }
+
+    public float pembagian() {
+        if (number2 != 0) {
+            return number1 / number2;
+        } else {
+            System.out.println("Error: Tidak bisa membagi dengan nol.");
+            return 0; // Nilai default jika pembagian dengan nol
+        }
+    }
+}
